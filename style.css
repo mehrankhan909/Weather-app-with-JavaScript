@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: #0d1b2a;
+    overflow: hidden;
+}
+.container{
+    width: 500px;
+    margin: 100px auto;
+    background: linear-gradient(#001c55,#0e6ba8);
+    padding: 20px;
+    border-radius: 20px;
+}
+h1,h2{
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+h2{
+    margin-top: 10px;
+}
+
+h5{
+    color: white;
+}
+p{
+    margin-top: 40px;
+    color: white;
+    font-size: 22px;
+    margin-left: 13px;
+    text-align: center;
+}
+.adding{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+input{
+    width: 80%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 19%;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+}
+button:hover{
+    opacity: 0.8;
+}
+.temp{
+    margin-bottom: 60px;
+}
+.none{
+    display: none;
+}
+.yes{
+    display: block;
+}
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .container{
+        width: 100%;
+        margin-top: 0px;
+        height: 100vh;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 35px;
+        margin-bottom: 60px;
+        margin-top: 10px;
+    }
+    input{
+        width: 75%;
+        height: 60px;
+        font-size: 18px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    button{
+        width: 20%;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 100px;
+    }
+    img{
+        width: 120px;
+    }
+    .temp{
+        margin-top: 70px;
+    }
+    .img{
+        width: 20px;
+        height: 20px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h5{
+        font-size:25px;
+        display: block;
+    }
+    .wind{
+        flex-direction: column; 
+        align-content: stretch;
+    }
+    .top{
+        margin-top: 50px;
+    }
+}
